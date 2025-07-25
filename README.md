@@ -14,13 +14,15 @@ This is a Python command-line tool that extracts non-academic scientific papers 
 
 ## How to Use
 
+Install Poetry
+
 Run the script using the following format:
 
-python -m get_papers_list.main "your search term" [-f filename.csv] [--debug]
+ poetry run main.py "your search term" [-f filename.csv] [--debug]
 
 ## Example:
 
-python -m get_papers_list.main "cancer immunotherapy" -f results.csv --debug
+ poetry run get-papers-list "cancer therapeutics"
 
 ## Output
 
@@ -36,6 +38,7 @@ The CSV or console output will include:
 ## Tech Stack
 
 - Python 3.8+
+- Poetry
 - Modules: requests, argparse, csv, xml.etree.ElementTree
 - Uses NCBI PubMed API
 
@@ -47,6 +50,7 @@ The CSV or console output will include:
 ## Requirements
 
 - Python 3.8 or higher
+- Poetry
 - Internet connection to fetch data from PubMed
 - Dependencies :
   - pandas
